@@ -4,6 +4,8 @@ A desktop (Electron) showcase of `DataSetOptions.useWasmMemory64` in [LightningC
 
 **28 GB of motorsport telemetry — a full 12-round season, 120 channels at 1 kHz, 7.4 billion data points — lives in a single shared `DataSet`, and a whole dashboard of charts renders from it with no data duplication.**
 
+<img width="3839" height="2044" alt="screenshot" src="https://github.com/user-attachments/assets/9d91405b-a124-4ef7-bef8-0047bbbbd83c" />
+
 ## What it demonstrates
 
 - **`useWasmMemory64: true`** – column storage is allocated as `WebAssembly.Memory` with 64-bit addressing, so a dataset is no longer limited by the ~4 GB per-`ArrayBuffer` ceiling. The amount of data you can load is bounded by the RAM you have.
